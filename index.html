@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The SAT Study Buddy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>The SAT Study Buddy</h1>
+    <div>
+      <label for="category">Choose a category:</label>
+      <select id="category">
+        <option value="Math">Math</option>
+        <option value="Reading">Reading</option>
+        <option value="Writing">Writing</option>
+      </select>
+
+      <label for="difficulty">Choose difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz" style="display:none;">
+      <p id="timer"></p>
+      <p id="question-text"></p>
+      <div id="answer-buttons"></div>
+      <button id="next-btn" style="display:none;">Next</button>
+      <div id="explanation" style="display:none;"></div>
+    </div>
+
+    <div id="leaderboard" style="display:none;"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
